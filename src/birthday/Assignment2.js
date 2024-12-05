@@ -2,12 +2,12 @@ import { Heart } from "lucide-react";
 
 export default function Assignment2() {
   return (
-    <div className="min-h-screen bg-white p-8 flex items-center justify-center relative overflow-hidden">
+    <div className="min-h-screen bg-black p-8 flex items-center justify-center relative overflow-hidden">
       {/* Love background */}
       {[...Array(20)].map((_, i) => (
         <Heart
           key={i}
-          className={`absolute text-pink-400 animate-icon-move`}
+          className={`absolute text-pink-600 animate-icon-move`}
           style={{
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
@@ -24,10 +24,9 @@ export default function Assignment2() {
         <h1
           className="text-6xl md:text-7xl font-bold text-center mb-8 tracking-wide"
           style={{
-            background: "linear-gradient(45deg, #FFD700, #FFA500)",
+            background: "linear-gradient(45deg, #E195AB, #A64D79)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
-            textShadow: "2px 2px 4px rgba(0,0,0,0.1)",
           }}
         >
           Happy Birthday!

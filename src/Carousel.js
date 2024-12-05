@@ -7,7 +7,7 @@ const carouselData = [
   {
     id: 1,
     image:
-      "https://cdn.discordapp.com/attachments/1104733859360297091/1313162837169930353/image.png?ex=6751c4b1&is=67507331&hm=5e476847f262defe877524de3b71fc5609294eeb64ccd5cb227ff355c98b34d5&",
+      "https://cdn.discordapp.com/attachments/1104733859360297091/1314302449766498455/5234330.jpg?ex=6753470a&is=6751f58a&hm=2009dcb3013a20c4326c11cbb98d51661facbddca3835cd2e5749edf1c5804c0&",
     date: "Sep 12, 2024",
     author: "vierkzme",
     title: "Assignment 1",
@@ -16,7 +16,7 @@ const carouselData = [
   {
     id: 2,
     image:
-      "https://cdn.discordapp.com/attachments/1104733859360297091/1313182288300871730/image.png?ex=6751d6cf&is=6750854f&hm=4021807fe55fcb6a3fbeab229b20e73cdf8c986819e7f074db79ffbeb0c99da9&",
+      "https://cdn.discordapp.com/attachments/1104733859360297091/1314307197941055488/image.png?ex=67534b76&is=6751f9f6&hm=34f55b6e79586faff3b6092863b7b1e934926cf36e56a0214de0d58d8c07eaee&",
     date: "Sep 23, 2024",
     author: "vierkzme",
     title: "Assignment 2",
@@ -56,7 +56,7 @@ const carouselData = [
     date: "Nov 28, 2024",
     author: "vierkzme",
     title: "Assignment 6",
-    link: "https://movies-app-eta-murex.vercel.app/",
+    link: "https://movies-app-seven-mauve.vercel.app/",
   },
   {
     id: 7,
@@ -85,7 +85,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-black py-12 px-4 sm:px-6 lg:px-8">
       {[...Array(20)].map((_, i) => (
         <Github
           key={i}
@@ -101,7 +101,7 @@ const Carousel = () => {
         />
       ))}
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">
+        <h1 className="text-4xl font-bold text-center text-white mb-12">
           Assignments
         </h1>
         <div className="relative w-full max-w-4xl mx-auto">
@@ -116,7 +116,7 @@ const Carousel = () => {
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-[400px] object-cover rounded-lg"
+                      className="w-full h-[400px] object-cover rounded-lg border-double border-2 border-amber-300"
                     />
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 text-white">
                       <p className="text-sm mb-2">
@@ -131,14 +131,14 @@ const Carousel = () => {
                         item.id === 5 ? (
                           <Link
                             to={`/assignment/${item.id}`}
-                            className="text-xs bg-blue-700 bg-opacity-50 px-2 py-1 rounded"
+                            className="text-xs bg-black border-dotted border-2 border-white bg-opacity-50 px-2 py-1 rounded"
                           >
                             Go
                           </Link>
                         ) : (
                           <a
                             href={item.link}
-                            className="text-xs bg-blue-700 bg-opacity-50 px-2 py-1 rounded"
+                            className="text-xs bg-black border-dotted border-2 border-white bg-opacity-50 px-2 py-1 rounded"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -154,14 +154,14 @@ const Carousel = () => {
           </div>
           <button
             onClick={prevSlide}
-            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-yellow-400 p-2 rounded-full"
+            className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black p-2 rounded-full"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-yellow-400 p-2 rounded-full"
+            className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black p-2 rounded-full"
             aria-label="Next slide"
           >
             <ChevronRight className="w-6 h-6 text-white" />
@@ -171,7 +171,7 @@ const Carousel = () => {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full ${
-                  index === currentSlide ? "bg-yellow-400" : "bg-gray-300"
+                  index === currentSlide ? "bg-white" : "bg-gray-500"
                 }`}
                 onClick={() => setCurrentSlide(index)}
                 aria-label={`Go to slide ${index + 1}`}

@@ -70,7 +70,6 @@ const Assignment4 = () => {
       {/* Navigation */}
       <nav className="bg-gray-800 shadow-md px-8 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-white text-xl font-bold">My App</h1>
           <button
             onClick={toggleMenu}
             className="text-white lg:hidden block focus:outline-none"
