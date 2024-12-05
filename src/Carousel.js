@@ -34,7 +34,7 @@ const carouselData = [
   {
     id: 4,
     image:
-      "https://cdn.discordapp.com/attachments/1104733859360297091/1313966827881234494/image.png?ex=67520e78&is=6750bcf8&hm=bdc3938132769e6f8da44365f8f3858e619ea0518108460e678cf77d14232d42&",
+      "https://cdn.discordapp.com/attachments/1104733859360297091/1314314691618799737/image.png?ex=67535271&is=675200f1&hm=f7973a7ffc3267594bf8fed205333dbd3ce53f07e746b83d54d0ce609a1f1417&",
     date: "Nov 21, 2024",
     author: "vierkzme",
     title: "Assignment 4",
